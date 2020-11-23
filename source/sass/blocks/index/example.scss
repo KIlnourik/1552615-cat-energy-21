@@ -1,0 +1,40 @@
+
+.example {
+  background-color: $basic_grey;
+  margin-top: 20px;
+}
+
+.example__header {
+  padding-top: 27 px;
+  font-family: "Oswald Regular";
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.example__description {
+  color: $special_dark-grey;
+}
+
+.example__results {
+  color: $special_dark-grey;
+  font-size: 12px;
+  line-height: 12px;
+}
+.example__results-quantity {
+  font-family: "Oswald Medium";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $basic_black;
+}
+
+.example__cost {
+  font-family: "Oswald Regular";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+

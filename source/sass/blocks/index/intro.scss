@@ -1,0 +1,27 @@
+.intro {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  background-color: $basic_green;
+  color: $basic_white;
+  margin-top: 20px;
+}
+
+.intro__header {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.intro__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.intro__button {
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: $basic_white;
+}
