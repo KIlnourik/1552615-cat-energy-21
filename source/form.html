@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи. Подбор программы</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -36,22 +38,23 @@
 
   <main class="page-main">
     <h1 class="page-main__header">Подбор программы</h1>
+    <p class="page-main__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <section class="cat-data">
       <h2 class="visually-hidden">Данные кота</h2>
       <div class="cat-data__wrapper">
         <label class="cat-data__name">Имя:*
-          <input type="text" class="cat-data__input">
+          <input type="text" class="cat-data__input" value="Барсик">
         </label>
         <label class="cat-data__weight">Вес (кг):*
-          <input type="text" class="cat-data__input">
+          <input type="text" class="cat-data__input" value="7">
         </label>
         <label class="cat-data__age">Возраст (лет):
-          <input type="text" class="cat-data__input">
+          <input type="text" class="cat-data__input" value="7">
         </label>
 
         <div class="cat-data__programms programms">
           <label class="programms__slim">
-            <input type="radio" class="programms__input programms__input--checked">Похудение
+            <input type="radio" class="programms__input programms__input--checked" checked>Похудение
           </label>
           <label class="programms__pro">
             <input type="radio" class="programms__input">Набор массы
@@ -68,10 +71,10 @@
       <h2 class="contact__header">Контактные данные (владельца кота)</h2>
       <div class="contact__wrapper">
         <label class="contact__email">E-Mail:*
-          <input type="email" name="email" class="contact__input">
+          <input type="email" name="email" class="contact__input" value="kuklachev@gmail.com">
         </label>
         <label class="contact__phone">Телефон:*
-          <input type="tel" name="tel" class="contact__input">
+          <input type="tel" name="tel" class="contact__input" value="8 (960) 900-60-90">
         </label>
       </div>
     </section>

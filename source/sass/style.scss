@@ -3,10 +3,12 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 
+/*page-header*/
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 
+/*Для index.html*/
 @import "blocks/index/page-main.scss";
 @import "blocks/index/intro.scss";
 @import "blocks/index/programms.scss";
@@ -14,7 +16,17 @@
 @import "blocks/index/example.scss";
 @import "blocks/index/slider.scss";
 
+/*page-footer*/
 @import "blocks/page-footer.scss";
 @import "blocks/location.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+
+/*Для form.html*/
+@import "blocks/form/page-main.scss";
+@import "blocks/form/cat-data.scss";
+@import "blocks/form/programms.scss";
+@import "blocks/form/contact.scss";
+@import "blocks/form/comment.scss";
+@import "blocks/form/additionally.scss";
+
