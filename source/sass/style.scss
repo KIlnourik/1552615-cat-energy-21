@@ -1,4 +1,3 @@
-
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
@@ -30,3 +29,10 @@
 @import "blocks/form/comment.scss";
 @import "blocks/form/additionally.scss";
 
+/*Для catalog.html*/
+@import "blocks/catalog/page-main.scss";
+@import "blocks/catalog/main-products.scss";
+@import "blocks/catalog/product.scss";
+@import "blocks/catalog/more-products.scss";
+@import "blocks/catalog/additional-products.scss";
+@import "blocks/catalog/bonus.scss";
