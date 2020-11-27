@@ -4,6 +4,26 @@
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header {
+    // width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 100px;
+  }
+}
 
+.page-header__logo {
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 0, 250, 0.8);
+  outline-offset: -5px;
+}
