@@ -7,6 +7,12 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 
+/*page-footer*/
+@import "blocks/page-footer.scss";
+@import "blocks/location.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
 /*Для index.html*/
 @import "blocks/index/page-main.scss";
 @import "blocks/index/intro.scss";
@@ -14,12 +20,6 @@
 @import "blocks/index/principle.scss";
 @import "blocks/index/example.scss";
 @import "blocks/index/slider.scss";
-
-/*page-footer*/
-@import "blocks/page-footer.scss";
-@import "blocks/location.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
 
 /*Для form.html*/
 @import "blocks/form/page-main.scss";

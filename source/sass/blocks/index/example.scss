@@ -1,7 +1,16 @@
-
 .example {
   background-color: $basic_grey;
   margin-top: 20px;
+}
+.example__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .example__header {
@@ -14,12 +23,18 @@
 
 .example__description {
   color: $special_dark-grey;
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    height: auto;
+  }
 }
 
 .example__results {
   color: $special_dark-grey;
   font-size: 12px;
   line-height: 12px;
+  display: inline-block;
 }
 .example__results-quantity {
   font-family: "Oswald Medium", "Arial", sans-serif;
@@ -36,4 +51,16 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.example__image {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
