@@ -1,4 +1,3 @@
-
 .programms {
   margin-top: 20px;
 }
@@ -24,6 +23,17 @@
 .programms__description {
   font-weight: normal;
   color: $special_dark-grey;
+}
+
+.programms__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .programms__list {
+    flex-direction: row;
+  }
 }
 
 .programms__link {

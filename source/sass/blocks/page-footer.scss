@@ -1,4 +1,3 @@
-
 .page-footer {
   margin-top: 20px;
 }
@@ -12,6 +11,8 @@
 }
 .page-footer__map {
   margin-top: 20px;
+  max-width: 100%;
+  // display: none;
 }
 
 .page-footer__logo {

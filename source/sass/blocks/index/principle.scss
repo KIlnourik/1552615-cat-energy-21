@@ -1,6 +1,22 @@
-
 .principle {
   margin-top: 20px;
+}
+
+.principle__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .principle__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .principle__wrapper {
+    padding: 0 110px;
+  }
 }
 
 .principle__header {
@@ -19,4 +35,5 @@
 .principle__item {
   font-weight: normal;
   margin: 20px 0;
+  min-width: 100%;
 }

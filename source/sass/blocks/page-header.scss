@@ -7,23 +7,32 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    // width: 100%;
     padding: 0 30px;
-    margin: 0 auto;
+    margin: 0;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: top;
+    justify-content: space-between;
     min-height: 100px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0 110px;
+  }
+}
+
 .page-header__logo {
-  margin: 0 auto;
-  outline: 5px solid rgba(255, 0, 250, 0.8);
-  outline-offset: -5px;
+  min-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    min-width: 174px;
+    height: 52px;
+  }
 }
