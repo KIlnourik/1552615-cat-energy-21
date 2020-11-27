@@ -5,9 +5,11 @@
 .example__wrapper {
   margin: 0 auto;
   padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
@@ -36,6 +38,7 @@
   line-height: 12px;
   display: inline-block;
 }
+
 .example__results-quantity {
   font-family: "Oswald Medium", "Arial", sans-serif;
   font-size: 24px;
@@ -51,9 +54,11 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     display: inline-block;
   }
+
   @media (min-width: $desktop-width) {
     display: block;
   }
