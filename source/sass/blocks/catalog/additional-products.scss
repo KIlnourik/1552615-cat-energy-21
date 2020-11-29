@@ -4,6 +4,7 @@
   font-style: normal;
   font-weight: normal;
 }
+
 .additional-products__header {
   font-size: 24px;
   line-height: 24px;
@@ -47,6 +48,6 @@
 .additional-products__bonus {
   width: 280px;
   height: 289px;
-  background: $basic_green url(../../../img/gift-photo-mobile-1.jpg) no-repeat;
+  background: $basic_green "url(../../../img/gift-photo-mobile-1.jpg)" no-repeat;
   color: $basic_white;
 }

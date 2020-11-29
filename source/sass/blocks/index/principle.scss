@@ -1,10 +1,22 @@
-
 .principle {
   margin-top: 20px;
 }
 
+.principle__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
 .principle__header {
-  font-family: "Oswald Regular";
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
@@ -19,4 +31,5 @@
 .principle__item {
   font-weight: normal;
   margin: 20px 0;
+  min-width: 100%;
 }

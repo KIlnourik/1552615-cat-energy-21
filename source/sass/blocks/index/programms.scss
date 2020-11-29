@@ -1,11 +1,17 @@
-
 .programms {
   margin-top: 20px;
 }
+
 .programms__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .programms__item {
