@@ -1,4 +1,3 @@
-
 .contact__header {
   font-size: 24px;
   line-height: 26px;
@@ -7,6 +6,12 @@
 
 .contact__wrapper {
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .contact__input {
