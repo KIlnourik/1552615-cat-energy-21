@@ -4,8 +4,33 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: $special_dark-grey;
   padding: 20px 0;
+  color: $special_dark-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic_grey;
+    min-width: 45%;
+    min-height: 410px;
+    margin: 70px 30px;
+    margin-left: 0;
+
+    // &:nth-child(2n) {
+    //   margin-right: 0;
+    // }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 21%;
+    min-height: 431px;
+    margin: 71px 40px;
+    margin-left: 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .product__link {
