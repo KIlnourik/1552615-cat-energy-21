@@ -1,7 +1,13 @@
-
 .cat-data {
   text-transform: uppercase;
   color: $special_dark-grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-data__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .cat-data__input {

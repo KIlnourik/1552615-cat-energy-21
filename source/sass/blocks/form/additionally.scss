@@ -1,3 +1,13 @@
+.additionally__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .additionally__header {
   font-size: 24px;
   line-height: 26px;

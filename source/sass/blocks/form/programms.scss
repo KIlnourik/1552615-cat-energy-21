@@ -1,5 +1,6 @@
-
 .programms {
   text-transform: uppercase;
   color: $special_darkest-grey;
+  display: flex;
+  flex-direction: column;
 }

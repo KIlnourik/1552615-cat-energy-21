@@ -7,30 +7,24 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header {
+  @media (min-width: $tablet-width) {
     padding: 0 30px;
     margin: 0;
     flex-direction: row;
     justify-content: space-between;
     min-height: 100px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header {
+  @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
 }
 
 .page-header__logo {
   min-width: 100%;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header__logo {
+  @media (min-width: $tablet-width) {
     min-width: 174px;
     height: 52px;
   }
