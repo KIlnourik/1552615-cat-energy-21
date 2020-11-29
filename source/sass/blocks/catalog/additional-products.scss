@@ -74,18 +74,18 @@
   min-width: 100%;
   min-height: 289px;
   background-color: $basic_green;
-  background-image: url(../../../img/gift-photo-mobile-1.jpg);
+  background-image: url("../../../img/gift-photo-mobile-1.jpg");
   background-repeat: no-repeat;
   color: $basic_white;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
-    background-image: url(../../../img/gift-photo-tablet.jpg);
+    background-image: url("../../../img/gift-photo-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     min-width: 245px;
     min-height: 289px;
-    background-image: url(../../../img/gift-photo-desktop.jpg);
+    background-image: url("../../../img/gift-photo-desktop.jpg");
   }
 }
