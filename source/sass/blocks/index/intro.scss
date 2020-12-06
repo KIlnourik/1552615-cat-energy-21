@@ -8,8 +8,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: url("../../../img/index-can-tablet.jpg") no-repeat 50% 95%;
-    height: 850px;
+    background: url("../../../img/index-can-tablet.jpg") no-repeat 50% 115%;
+    min-height: 805px;
   }
 
   @media (min-width: $desktop-width) {

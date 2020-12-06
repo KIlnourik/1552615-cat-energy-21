@@ -19,19 +19,36 @@
   margin: 20px;
   margin-top: 5px;
   padding: 20px;
+  padding-top: 10px;
   min-width: 240px;
-  height: 226px;
+  min-height: 226px;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 30px;
+    padding-left: 53px;
+    padding-top: 40px;
+    min-height: 287px;
+  }
 }
 
 .programms__header {
+  padding-left: 71px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: normal;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
 }
 
 .programms__description {
+  padding-top: 10px;
   padding-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -40,10 +57,20 @@
   color: $special_dark-grey;
   text-transform: none;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 25px 0;
+    width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }
 
 .programms__link {
   padding-top: 20px;
+  padding-bottom: 20px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -51,4 +78,14 @@
   color: $basic_black;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    display: block;
+  }
 }

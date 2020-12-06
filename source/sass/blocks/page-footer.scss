@@ -1,5 +1,5 @@
 .page-footer {
-  margin-top: 20px;
+  // margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -17,6 +17,7 @@
 .page-footer__location-main {
   background-color: $basic_white;
   padding: 0 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -38,6 +39,7 @@
 .page-footer__logo {
   margin-top: 20px;
   padding: 0 20px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;

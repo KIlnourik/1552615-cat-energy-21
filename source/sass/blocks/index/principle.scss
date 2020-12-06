@@ -1,5 +1,5 @@
 .principle {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .principle__wrapper {
@@ -16,6 +16,8 @@
 }
 
 .principle__header {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
@@ -26,10 +28,31 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .principle__item {
   font-weight: normal;
-  margin: 20px 0;
+  margin-top: 25px;
   min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 250px;
+    min-height: 280px;
+  }
+}
+
+.principle__description {
+  padding-left: 80px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 245;
+  }
 }
