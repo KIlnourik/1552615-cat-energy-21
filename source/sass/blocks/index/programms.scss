@@ -1,5 +1,5 @@
 .programms {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .programms__list {
@@ -17,6 +17,10 @@
 .programms__item {
   background-color: $basic_grey;
   margin: 20px;
+  margin-top: 5px;
+  padding: 20px;
+  min-width: 240px;
+  height: 226px;
 }
 
 .programms__header {
@@ -28,15 +32,23 @@
 }
 
 .programms__description {
+  padding-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: normal;
   color: $special_dark-grey;
+  text-transform: none;
+  border-bottom: 1px solid $border-grey;
 }
 
 .programms__link {
+  padding-top: 20px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
   color: $basic_black;
   text-transform: uppercase;
+  text-decoration: none;
 }
