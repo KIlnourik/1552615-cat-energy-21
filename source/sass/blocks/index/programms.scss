@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -29,6 +30,13 @@
     padding-top: 40px;
     min-height: 287px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    min-height: 374px;
+    padding: 0;
+    margin: 110px;
+  }
 }
 
 .programms__header {
@@ -45,6 +53,10 @@
     line-height: 36px;
     margin-top: 35px;
     margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
   }
 }
 

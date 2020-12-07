@@ -16,7 +16,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    line-height: 30px;
     padding: 0 110px;
+    min-width: 1220px;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 32px;
+    z-index: 2;
   }
 }
 
@@ -33,6 +41,10 @@
     padding: 0;
     height: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .page-header__logo {
@@ -47,6 +59,8 @@
   @media (min-width: $desktop-width) {
     min-width: 202px;
     height: 59px;
+    // margin-right: 600px;
+    position: absolute;
   }
 }
 
