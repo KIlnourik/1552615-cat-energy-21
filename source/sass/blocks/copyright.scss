@@ -3,6 +3,10 @@
   max-width: 100%;
   height: 78px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
+  }
 }
 
 .copyright__link {
@@ -17,4 +21,8 @@
 .copyright__logo {
   margin-top: 15px;
   margin-left: 135px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }

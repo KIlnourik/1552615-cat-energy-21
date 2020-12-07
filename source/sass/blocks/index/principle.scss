@@ -1,5 +1,9 @@
 .principle {
   margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-grey;
+  }
 }
 
 .principle__wrapper {
@@ -22,6 +26,12 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .principle__list {
@@ -32,6 +42,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 75px;
+    }
   }
 }
 
@@ -43,6 +62,7 @@
   @media (min-width: $tablet-width) {
     min-width: 250px;
     min-height: 280px;
+    margin-top: 40px;
   }
 }
 
@@ -53,6 +73,10 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    min-width: 245;
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: 86px;
   }
 }

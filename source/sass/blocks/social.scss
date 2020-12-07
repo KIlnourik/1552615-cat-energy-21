@@ -14,6 +14,11 @@
   align-items: center;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-left: 80px;
+  }
 }
 
 .social__link {
