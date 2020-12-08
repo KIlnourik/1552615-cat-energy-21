@@ -19,6 +19,10 @@
     border: none;
     margin-left: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 260px;
+  }
 }
 
 .social__link {

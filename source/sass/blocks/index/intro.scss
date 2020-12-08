@@ -13,9 +13,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../../img/index-can-desktop.png") no-repeat 53% 70%,
+    background: url("../../../img/index-can-desktop.png") no-repeat 63% 70%,
       url("../../../img/Rectangle_17.png") no-repeat 100% 0,
-      url("../../../img/index-background-desktop-1.jpg") no-repeat 90% 0;
+      url("../../../img/index-background-desktop-1.jpg") no-repeat 100% 0;
     position: relative;
     min-height: 694px;
   }
@@ -33,11 +33,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1220px;
     flex-direction: row;
+    margin: 0 auto;
     padding: 0 110px;
     padding-top: 195px;
     margin-top: 0;
-    margin-left: 70px;
+    margin-left: 80px;
   }
 }
 
@@ -51,11 +53,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    width: 414px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 414px;
   }
 }
 

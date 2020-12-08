@@ -7,6 +7,12 @@
   @media (min-width: $tablet-width) {
     margin-left: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-left: 330px;
+    height: 149px;
+  }
 }
 
 .copyright__link {

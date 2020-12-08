@@ -86,7 +86,7 @@
     padding-left: 50px;
 
     &:last-child {
-      padding-right: 20px;
+      padding-right: 10px;
     }
   }
 
@@ -127,6 +127,6 @@
   text-decoration: none;
 
   @media (min-width: $desktop-width) {
-    // color: $basic_white;
+    color: $basic_white;
   }
 }

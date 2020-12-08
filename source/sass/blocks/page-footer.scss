@@ -2,6 +2,7 @@
   // margin-top: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .page-footer__wrapper {
@@ -26,6 +27,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+    position: absolute;
+    z-index: 2;
+    left: 110px;
+    top: 130px;
   }
 }
 

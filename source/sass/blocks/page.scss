@@ -14,10 +14,12 @@
   min-height: 100%;
   margin: 0 auto;
   min-width: 320px;
-}
 
-@media (min-width: $tablet-width) {
-  .page__body {
+  @media (min-width: $tablet-width) {
     min-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
   }
 }
