@@ -1,13 +1,22 @@
 .location {
-  margin-top: 20px;
-  padding: 0 20px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 72px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 131px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding-left: 76px;
+    padding-right: 89px;
+    width: 405px;
+    height: 151px;
   }
 }
 
@@ -17,8 +26,30 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: inline-block;
+  width: 135px;
+  height: 64px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .location__address {
   line-height: 20px;
+  display: inline-block;
+  width: 140px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }

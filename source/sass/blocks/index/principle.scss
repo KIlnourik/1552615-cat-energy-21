@@ -1,5 +1,13 @@
 .principle {
-  margin-top: 20px;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .principle__wrapper {
@@ -10,26 +18,87 @@
     padding: 0 30px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
 .principle__header {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .principle__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 75px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(4n)) {
+      margin-right: 70px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .principle__item {
   font-weight: normal;
-  margin: 20px 0;
+  margin-top: 25px;
   min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 250px;
+    min-height: 280px;
+    margin-top: 40px;
+  }
+}
+
+.principle__description {
+  padding-left: 80px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: 86px;
+  }
 }

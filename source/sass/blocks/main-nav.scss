@@ -1,24 +1,129 @@
 .main-nav {
   color: $basic_black;
+  height: 100%;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 66px;
+  background-color: $basic_white;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 24px;
+  height: 1.5px;
+  background-color: $basic_black;
+  box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    width: 25px;
+    height: 1.5px;
+    background-color: $basic_black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
 }
 
 .main-nav__list {
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__list {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    min-width: 100%;
+    max-height: 100%;
+    width: 100%;
+  }
+}
+
+.main-nav__list .main-nav__item {
+  padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+
+    &:last-child {
+      padding-right: 10px;
+    }
+  }
+
+  &:first-child {
+    padding-right: 20px;
+    border-top: 1px solid $border-grey;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+      padding-left: 30px;
+      padding-right: 0;
+    }
+  }
+}
+
+.main-nav__item {
+  min-height: 66px;
+  max-width: 100%;
+  border-bottom: 1px solid $border-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    min-height: 100px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
   }
 }
 
 .main-nav__link {
   color: $basic_black;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: $basic_white;
+  }
 }

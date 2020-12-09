@@ -1,4 +1,30 @@
-
 .social {
   margin-top: 20px;
+  height: 63px;
+}
+
+.social__list {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-left: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 260px;
+  }
+}
+
+.social__link {
+  text-decoration: none;
 }
