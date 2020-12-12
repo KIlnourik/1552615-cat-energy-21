@@ -16,6 +16,31 @@
     border: 1px solid $basic_green;
     background-color: $basic_green;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 65px;
+    margin-bottom: 63px;
+    padding-left: 70px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &:after {
+      top: 22px;
+      width: 445px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 29px;
+      top: 22px;
+      right: auto;
+      left: 0;
+      border: 1px solid $basic_green;
+      background-color: $basic_green;
+    }
+  }
 }
 
 .additionally__list {
@@ -25,13 +50,15 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 70px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
 .additionally__item {
-  margin-bottom: 24px;
+  margin: 0 50px;
+  flex: 1;
 }
 
 .additionally__item .additionally__label {
@@ -39,6 +66,12 @@
   text-transform: uppercase;
   position: relative;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .additionally__checkbox + .additionally__label::before {

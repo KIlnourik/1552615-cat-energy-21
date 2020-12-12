@@ -17,12 +17,39 @@
     border: 1px solid $basic_green;
     background-color: $basic_green;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    padding-left: 70px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &:after {
+      top: 23px;
+      width: 476px;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 29px;
+      top: 23px;
+      right: auto;
+      left: 0;
+      border: 1px solid $basic_green;
+      background-color: $basic_green;
+    }
+  }
 }
 
 .comment__wrapper {
   padding: 0 20px;
   max-width: 100%;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 67px 0 71px;
+  }
 }
 
 .comment__textarea {
@@ -39,6 +66,11 @@
   flex: 1;
 
   @media (min-width: $tablet-width) {
-    min-height: 174px;
+    margin-top: 48px;
+    padding-top: 9px;
+    padding-left: 16px;
+    min-height: 162px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
