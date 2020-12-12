@@ -1,6 +1,28 @@
-.additionally__wrapper {
+.additionally__header {
+  margin-left: 20px;
+  margin-bottom: 39px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: normal;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 135px;
+    top: 15px;
+    right: 0;
+    left: auto;
+    border: 1px solid $basic_green;
+    background-color: $basic_green;
+  }
+}
+
+.additionally__list {
+  list-style: none;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -8,28 +30,62 @@
   }
 }
 
-.additionally__header {
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: normal;
+.additionally__item {
+  margin-bottom: 24px;
 }
 
-.additionally__label {
+.additionally__item .additionally__label {
+  margin-left: 46px;
   text-transform: uppercase;
+  position: relative;
+  display: block;
+}
+
+.additionally__checkbox + .additionally__label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_radio_grey;
+  box-sizing: border-box;
+}
+
+.additionally__checkbox:checked + .additionally__label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -40px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../../img/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .additionally__send-button {
-  background-color: $basic_green;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 280px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   color: $basic_white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   font-weight: normal;
+  background-color: $basic_green;
+  border: none;
+  display: block;
 }
 
 .additionally__legend {
+  margin-top: 23px;
+  margin-bottom: 32px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
+  text-align: center;
+  display: block;
 }

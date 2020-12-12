@@ -1,0 +1,47 @@
+.programms-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  text-transform: uppercase;
+  color: $special_darkest-grey;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+}
+
+.programms-list__item {
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.programms-list__item .programms-list__label {
+  margin-left: 45px;
+  position: relative;
+  display: block;
+}
+
+.programms-list__input + .programms-list__label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_radio_grey;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.programms-list__input:checked + .programms-list__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $basic_green;
+  // box-sizing: border-box;
+}

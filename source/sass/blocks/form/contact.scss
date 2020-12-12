@@ -1,10 +1,30 @@
 .contact__header {
+  padding-left: 19px;
+  padding-right: 0;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 26px;
   font-weight: normal;
+  display: block;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 99px;
+    top: 17px;
+    right: 0;
+    left: auto;
+    border: 1px solid $basic_green;
+    background-color: $basic_green;
+  }
 }
 
-.contact__wrapper {
+.contact__list {
+  padding: 0 20px;
+  margin-bottom: 10px;
+  list-style: none;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -14,6 +34,23 @@
   }
 }
 
+.contact__item {
+  display: flex;
+  margin: 7px 0;
+  align-items: center;
+}
+
 .contact__input {
+  padding-left: 16px;
+  min-height: 45px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.contact__label {
+  margin-right: 10px;
 }
