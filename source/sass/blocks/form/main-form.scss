@@ -9,7 +9,7 @@
 }
 
 .main-form__header {
-  font-size: 6px;
+  font-size: 36px;
   line-height: 36px;
   font-weight: normal;
   margin-top: 28px;
@@ -38,6 +38,6 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: inline;
   }
 }

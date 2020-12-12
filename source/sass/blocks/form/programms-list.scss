@@ -1,5 +1,4 @@
 .programms-list {
-  margin: 0;
   padding: 0;
   padding-top: 26px;
   text-transform: uppercase;
@@ -9,11 +8,20 @@
   flex-direction: column;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
-}
 
-.programms-list__item {
-  margin-bottom: 25px;
-  align-items: center;
+  &:last-child {
+    margin: 100px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 28px;
+    margin-top: 55px;
+    border: 1px solid $border-grey;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .programms-list__item .programms-list__label {
@@ -43,5 +51,4 @@
   height: 14px;
   border-radius: 50%;
   background-color: $basic_green;
-  // box-sizing: border-box;
 }
