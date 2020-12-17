@@ -1,5 +1,4 @@
 .page-footer {
-  // margin-top: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -16,10 +15,14 @@
   }
 }
 
-.page-footer__location-main {
-  background-color: $basic_white;
+.page-footer__location {
+  background-color: $basic_grey;
   padding: 0 20px;
   margin: 0;
+
+  &--index {
+    background-color: $basic_white;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;

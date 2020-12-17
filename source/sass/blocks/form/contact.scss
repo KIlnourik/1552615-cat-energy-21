@@ -9,7 +9,7 @@
   font-weight: normal;
   display: block;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 99px;
@@ -26,10 +26,10 @@
     font-size: 36px;
     line-height: 36px;
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
-      width: 30px;
+      min-width: 30px;
       top: 22px;
       right: auto;
       left: 0;
@@ -37,9 +37,26 @@
       background-color: $basic_green;
     }
 
-    &:after {
+    &::after {
       top: 22px;
-      width: 145px;
+      min-width: 145px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    padding-left: 110px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      min-width: 69px;
+      top: 21px;
+    }
+
+    &::after {
+      top: 21px;
+      min-width: 775px;
     }
   }
 }
@@ -60,7 +77,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 110px;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -71,6 +90,19 @@
 
   @media (min-width: $tablet-width) {
     margin: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+
+    &:nth-child(n) {
+      margin-right: 35px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 35px;
+      margin-right: 0;
+    }
   }
 }
 

@@ -14,6 +14,12 @@
     margin-top: 55px;
     border: 1px solid $border-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 514px;
+    margin-left: 40px;
+    margin-top: 45px;
+  }
 }
 
 .programms-list__item {

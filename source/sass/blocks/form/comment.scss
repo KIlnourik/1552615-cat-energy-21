@@ -7,7 +7,7 @@
   font-weight: normal;
   position: relative;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 155px;
@@ -24,20 +24,34 @@
     font-size: 36px;
     line-height: 36px;
 
-    &:after {
+    &::after {
       top: 23px;
-      width: 476px;
+      min-width: 476px;
     }
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
-      width: 29px;
+      min-width: 29px;
       top: 23px;
       right: auto;
       left: 0;
       border: 1px solid $basic_green;
       background-color: $basic_green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+
+    &::after {
+      top: 24px;
+      min-width: 1105px;
+    }
+
+    &::before {
+      top: 24px;
+      min-width: 69px;
     }
   }
 }
@@ -49,6 +63,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 67px 0 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
@@ -72,5 +90,9 @@
     min-height: 162px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
   }
 }
