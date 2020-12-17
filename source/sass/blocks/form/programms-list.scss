@@ -1,0 +1,74 @@
+.programms-list {
+  padding: 0;
+  padding-top: 26px;
+  text-transform: uppercase;
+  color: $special_darkest-grey;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 28px 5px 28px;
+    margin-top: 55px;
+    border: 1px solid $border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 514px;
+    margin-left: 40px;
+    margin-top: 45px;
+  }
+}
+
+.programms-list__item {
+  margin-bottom: 23px;
+}
+
+.programms-list__item .programms-list__label {
+  margin-left: 45px;
+  position: relative;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+}
+
+.programms-list__input + .programms-list__label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_radio_grey;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+    left: -61px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.programms-list__input:checked + .programms-list__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $basic_green;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: -50px;
+    width: 18px;
+    height: 18px;
+  }
+}

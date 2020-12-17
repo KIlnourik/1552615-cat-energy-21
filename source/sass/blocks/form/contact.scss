@@ -1,19 +1,132 @@
 .contact__header {
+  padding-left: 19px;
+  padding-right: 0;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 26px;
   font-weight: normal;
+  display: block;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 99px;
+    top: 17px;
+    right: 0;
+    left: auto;
+    border: 1px solid $basic_green;
+    background-color: $basic_green;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    padding-left: 70px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      min-width: 30px;
+      top: 22px;
+      right: auto;
+      left: 0;
+      border: 1px solid $basic_green;
+      background-color: $basic_green;
+    }
+
+    &::after {
+      top: 22px;
+      min-width: 145px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    padding-left: 110px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      min-width: 69px;
+      top: 21px;
+    }
+
+    &::after {
+      top: 21px;
+      min-width: 775px;
+    }
+  }
 }
 
-.contact__wrapper {
+.contact__list {
+  padding: 0 20px;
+  margin-bottom: 10px;
+  list-style: none;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    padding: 0 65px 0 71px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 0 110px;
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contact__item {
+  display: flex;
+  margin: 7px 0;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+
+    &:nth-child(n) {
+      margin-right: 35px;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 35px;
+      margin-right: 0;
+    }
   }
 }
 
 .contact__input {
+  padding-left: 16px;
+  min-height: 45px;
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+  flex: 1;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 52px;
+  }
+}
+
+.contact__label {
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }

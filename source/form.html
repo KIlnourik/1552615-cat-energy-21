@@ -11,11 +11,16 @@
 <body class="page__body">
 
   <header class="page-header">
-    <a href="#" class="page-header__logo">
-      <img src="https://via.placeholder.com/33x37" alt="Кот в оранжевой маске">
-      <img src="https://via.placeholder.com/101x18" alt="Название сайта Cat energy">
-    </a>
-    <nav class="main-nav">
+    <div class="page-header__wrapper">
+      <a href="#" class="page-header__logo">
+        <img src="https://via.placeholder.com/33x37" alt="Магазин питания для котов Cat Energy">
+      </a>
+      <a href="#" class="page-header__title-logo">
+        <img src="https://via.placeholder.com/101x18" alt="Название сайта Cat energy">
+      </a>
+    </div>
+
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -36,45 +41,59 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1 class="page-main__header">Подбор программы</h1>
-    <p class="page-main__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <main class="page-main main-form">
+    <div class="main-form__wrapper">
+      <h1 class="main-form__header">Подбор программы</h1>
+      <p class="main-form__intro">Заполните анкету, и мы подберем<br class="main-form__tablet-br">программу&nbsp;питания
+        для вашего кота</p>
+    </div>
+
     <section class="cat-data">
       <h2 class="visually-hidden">Данные кота</h2>
-      <div class="cat-data__wrapper">
-        <label class="cat-data__name">Имя:*
-          <input type="text" class="cat-data__input" value="Барсик">
-        </label>
-        <label class="cat-data__weight">Вес (кг):*
-          <input type="text" class="cat-data__input" value="7">
-        </label>
-        <label class="cat-data__age">Возраст (лет):
-          <input type="text" class="cat-data__input" value="7">
-        </label>
-      </div>
-      <div class="cat-data__programms programms">
-        <label class="programms__slim">
-          <input type="radio" class="programms__input programms__input--checked" checked>Похудение
-        </label>
-        <label class="programms__pro">
-          <input type="radio" class="programms__input">Набор массы
-        </label>
-        <label class="programms__advice">
-          <input type="radio" class="programms__input">Не знаю (нужен Ваш совет)
-        </label>
-      </div>
+      <ul class="cat-data__list">
+        <li class="cat-data__item">
+          <label class="cat-data__label" for="cat-name">Имя:* </label>
+          <input type="text" class="cat-data__input" id="cat-name" value="Барсик">
+        </li>
+        <li class="cat-data__item">
+          <label class="cat-data__label" for="cat-weight">Вес (кг):* </label>
+          <input type="text" class="cat-data__input" id="cat-weight" value="7">
+        </li>
+        <li class="cat-data__item">
+          <label class="cat-data__label" for="cat-age">Возраст (лет): </label>
+          <input type="text" class="cat-data__input" id="cat-age" value="7">
+        </li>
+      </ul>
+
+      <ul class="cat-data__programms-list programms-list">
+        <li class="programms-list__item">
+          <input type="radio" class="visually-hidden programms-list__input programms__input--checked" name="programms"
+            id="slim" checked>
+          <label class="programms-list__label" for="slim">Похудение</label>
+        </li>
+        <li class="programms-list__item">
+          <input type="radio" class="visually-hidden programms-list__input" name="programms" id="pro">
+          <label class="programms-list__label" for="pro">Набор массы</label>
+        </li>
+        <li class="programms-list__item">
+          <input type="radio" class="visually-hidden programms-list__input" name="programms" id="advice">
+          <label class="programms-list__label" for="advice">Не знаю (нужен Ваш совет)</label>
+        </li>
+      </ul>
     </section>
 
     <section class="contact">
-      <h2 class="contact__header">Контактные данные (владельца кота)</h2>
-      <div class="contact__wrapper">
-        <label class="contact__email">E-Mail:*
-          <input type="email" name="email" class="contact__input" value="kuklachev@gmail.com">
-        </label>
-        <label class="contact__phone">Телефон:*
-          <input type="tel" name="tel" class="contact__input" value="8 (960) 900-60-90">
-        </label>
-      </div>
+      <h2 class="contact__header">Контактные данные (владельца&nbsp;кота)</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <label class="contact__label" for="email">E-Mail:*</label>
+          <input type="email" id="email" class="contact__input" value="kuklachev@gmail.com">
+        </li>
+        <li class="contact__item">
+          <label class="contact__label" for="tel">Телефон:*</label>
+          <input type="tel" class="contact__input" id="tel" value="8 (960) 900-60-90">
+        </li>
+      </ul>
     </section>
 
     <section class="comment">
@@ -86,34 +105,39 @@
 
     <section class="additionally">
       <h2 class="additionally__header">Дополнительно</h2>
-      <div class="additionally__wrapper">
-        <label class="additionally__label">
-          <input type="checkbox" class="additionally__checkbox additionally__checkbox--checked"> Сахарозаменитель
-        </label>
-        <label class="additionally__label">
-          <input type="checkbox" class="additionally__checkbox"> Молоко
-        </label>
-        <label class="additionally__label">
-          <input type="checkbox" class="additionally__checkbox"> Питьевая вода
-        </label>
-        <label class="additionally__label">
-          <input type="checkbox" class="additionally__checkbox"> Витамины
-        </label>
-        <button class="additionally__send-button">Отправить заявку</button>
-        <small class="additionally__legend">
-          * &mdash; Обязательные поля
-        </small>
-      </div>
+      <ul class="additionally__list">
+        <li class="additionally__item">
+          <input type="checkbox" class="visually-hidden additionally__checkbox additionally__checkbox--checked"
+            id="sugar_substitute" checked>
+          <label class="additionally__label" for="sugar_substitute">Сахарозаменитель</label>
+        </li>
+        <li class="additionally__item">
+          <input type="checkbox" class="visually-hidden additionally__checkbox" id="water">
+          <label class="additionally__label" for="water">Питьевая вода</label>
+        </li>
+        <li class="additionally__item">
+          <input type="checkbox" class="visually-hidden additionally__checkbox" id="milk">
+          <label class="additionally__label" for="milk">Молоко</label>
+        </li>
+        <li class="additionally__item">
+          <input type="checkbox" class="visually-hidden additionally__checkbox" id="vitamins">
+          <label class="additionally__label" for="vitamins">Витамины</label>
+        </li>
+      </ul>
+      <button class="additionally__send-button">Отправить заявку</button>
+      <small class="additionally__legend">
+        * &mdash; Обязательные поля
+      </small>
     </section>
+
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__location location">
-        <p class="location__invitation">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="location__invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      </section>
 
       <iframe class="page-footer__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605417245862!5m2!1sru!2sru"
@@ -144,6 +168,8 @@
     </div>
 
   </footer>
+
+  <script src="js/index.js"></script>
 
 </body>
 
