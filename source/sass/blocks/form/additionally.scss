@@ -1,3 +1,10 @@
+.additionally {
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+}
+
 .additionally__header {
   margin-left: 20px;
   margin-bottom: 39px;
@@ -20,7 +27,7 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-top: 65px;
-    margin-bottom: 63px;
+    margin-bottom: 62px;
     padding-left: 70px;
     font-size: 36px;
     line-height: 36px;
@@ -48,17 +55,32 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
     padding: 0 70px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .additionally__item {
-  margin: 0 50px;
-  flex: 1;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(n) {
+      margin-left: 0;
+      margin-right: 30px;
+      margin-bottom: 41px;
+      min-width: 284px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .additionally__item .additionally__label {
@@ -83,6 +105,12 @@
   height: 30px;
   border: 1px solid $special_radio_grey;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+  }
 }
 
 .additionally__checkbox:checked + .additionally__label::after {
@@ -95,12 +123,17 @@
   background-image: url("../../../img/Vector.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+    left: -49px;
+  }
 }
 
 .additionally__send-button {
   margin: 0 auto;
   padding: 10px 0;
-  width: 280px;
+  min-width: 280px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   color: $basic_white;
   font-size: 16px;
@@ -110,6 +143,14 @@
   background-color: $basic_green;
   border: none;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 71px;
+    padding: 16px 0;
+    display: inline-block;
+    min-width: 282px;
+    font-size: 20px;
+  }
 }
 
 .additionally__legend {
@@ -121,4 +162,13 @@
   font-weight: normal;
   text-align: center;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+    margin-left: 58px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+  }
 }
