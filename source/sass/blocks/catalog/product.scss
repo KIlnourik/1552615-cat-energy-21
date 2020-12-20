@@ -15,10 +15,6 @@
     min-height: 410px;
     margin: 70px 30px;
     margin-left: 0;
-
-    // &:nth-child(2n) {
-    //   margin-right: 0;
-    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +41,7 @@
 }
 
 .product__button {
+  min-height: 40px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -54,4 +51,7 @@
   color: $basic_white;
   text-decoration: none;
   background-color: $basic_green;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
 }
