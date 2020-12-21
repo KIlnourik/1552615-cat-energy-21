@@ -4,10 +4,12 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  padding: 20px 0;
+  padding: 20px;
   color: $special_dark-grey;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $border-grey;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-color: $basic_grey;
@@ -30,6 +32,7 @@
 }
 
 .product__link {
+  margin-left: 140px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -38,6 +41,28 @@
   text-transform: uppercase;
   color: $special_darkest-grey;
   text-decoration: none;
+  display: inline-block;
+}
+
+.product__image {
+  margin-right: 40px;
+  position: absolute;
+  display: none;
+}
+
+.product__parameters {
+  margin-left: 140px;
+  padding-top: 12px;
+}
+
+.product__parameter {
+  margin: 0;
+  padding: 0;
+}
+
+.product__value {
+  margin-left: 71px;
+  text-align: end;
 }
 
 .product__button {
