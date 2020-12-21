@@ -3,16 +3,43 @@
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+  text-align: center;
+  position: relative;
 }
 
 .more-products__subtitle {
+  margin-top: 39px;
+  margin-bottom: 5px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special_almost-black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 19px;
+    left: 125px;
+    width: 30px;
+    height: 2px;
+    background-color: $plus-grey;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 19px;
+    left: 125px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(90deg);
+    background-color: $plus-grey;
+  }
 }
 
 .more-products__text {
+  margin-top: 8px;
+  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -20,10 +47,14 @@
 }
 
 .more-products__button {
+  padding-top: 10px;
+  min-height: 30px;
+  min-width: 100%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special_dark-grey;
   background-color: $basic_grey;
   text-decoration: none;
+  display: block;
 }

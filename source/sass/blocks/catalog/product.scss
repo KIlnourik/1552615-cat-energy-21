@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
   padding: 20px;
   color: $special_dark-grey;
   display: flex;
@@ -47,26 +47,37 @@
 .product__image {
   margin-right: 40px;
   position: absolute;
-  display: none;
+  top: 30px;
+  left: 47px;
 }
 
 .product__parameters {
   margin-left: 140px;
-  padding-top: 12px;
+  margin-top: 15px;
+  padding: 0;
+  border: none;
+  border-collapse: collapse;
+  vertical-align: middle;
 }
 
 .product__parameter {
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
 }
 
 .product__value {
-  margin-left: 71px;
+  margin: 0;
+  padding: 2px 0;
+  margin-left: 70px;
   text-align: end;
 }
 
 .product__button {
-  min-height: 40px;
+  margin-top: 18px;
+  margin-bottom: 4px;
+  padding-top: 10px;
+  min-height: 30px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;

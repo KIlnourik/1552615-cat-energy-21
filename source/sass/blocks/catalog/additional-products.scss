@@ -1,5 +1,5 @@
 .additional-products {
-  padding-top: 20px;
+  padding-top: 10px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -8,6 +8,7 @@
 .additional-products__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -16,9 +17,22 @@
 }
 
 .additional-products__header {
+  padding-left: 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    top: 15px;
+    right: 0;
+    left: auto;
+    border: 1px solid $basic_green;
+    background-color: $basic_green;
+  }
 }
 
 .additional-products__list {
@@ -27,7 +41,8 @@
 }
 
 .additional-products__item {
-  padding: 10px 0;
+  padding: 12px 0;
+  border-top: 1px solid $border-grey;
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -43,6 +58,12 @@
   color: $special_darkest-grey;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+}
+
+.additional-products__parameters {
+  display: flex;
+  justify-content: space-between;
 }
 
 .additional-products__volume,
@@ -51,18 +72,21 @@
   font-size: 14px;
   line-height: 14px;
   color: $special_darkest-grey;
-  display: inline-block;
 }
 
 .additional-products__button {
+  margin-bottom: 6px;
+  padding-top: 12px;
+  min-height: 28px;
+  min-width: 100%;
   font-size: 16px;
   line-height: 16px;
   color: $basic_white;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   background-color: $basic_green;
   display: block;
-  min-width: 100%;
 
   @media (min-width: $desktop-width) {
     min-width: 244px;
