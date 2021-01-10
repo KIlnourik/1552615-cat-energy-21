@@ -1,10 +1,10 @@
 .example {
   background-color: $basic_grey;
-  margin-top: 45px;
+  margin-top: 47px;
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    margin-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +30,9 @@
 }
 
 .example__header {
-  padding-top: 27px;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  padding-top: 26px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -38,7 +40,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -74,15 +76,59 @@
   }
 }
 
+.example__results-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.example__results-item {
+  margin-top: 10px;
+  position: relative;
+}
+
+.example__results-quantity {
+  padding-top: 13px;
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $basic_black;
+  display: block;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  display: block;
+  border: 1px solid $special_radio-grey;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    right: 0;
+    left: auto;
+  }
+}
+
 .example__results {
+  margin: 0 auto;
   font-family: "Arial", sans-serif;
   color: $special_dark-grey;
   font-size: 12px;
   line-height: 12px;
-  min-width: 124px;
-  height: auto;
-  display: inline-block;
+  width: 80px;
   text-align: center;
+  background-color: $basic_grey;
+  position: absolute;
+  top: 48px;
+  left: 20px;
+  order: 3;
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;
@@ -95,27 +141,8 @@
   }
 }
 
-.example__results-quantity {
-  font-family: "Oswald Medium", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $basic_black;
-  display: block;
-  width: 124px;
-  height: 56px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 37px;
-    right: 0;
-    left: auto;
-  }
-}
-
 .example__cost {
+  margin-top: 35px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -140,7 +167,9 @@
   }
 }
 
-.example__image-wrapper {
+.example__slides-wrapper {
+    margin-top: 32px;
+
   @media (min-width: $tablet-width) {
     height: 425px;
   }
@@ -154,10 +183,11 @@
 }
 
 .example__image {
-  margin: 0;
-  margin-top: 30px;
+  margin: 0 auto;
   padding: 0;
-  max-width: 100%;
+  width: 312px;
+  height: auto;
+  float: left;
 
   @media (min-width: $desktop-width) {
     width: 600px;
@@ -167,6 +197,7 @@
 .example__toggle {
   margin: 0;
   margin-top: 20px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;

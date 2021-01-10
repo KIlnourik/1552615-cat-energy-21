@@ -1,5 +1,5 @@
 .principle {
-  margin-top: 5px;
+  margin-top: 8px;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $border-grey;
@@ -52,6 +52,72 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+  }
+}
+
+.principle__item {
+  font-weight: normal;
+  margin-top: 26px;
+  min-width: 100%;
+  position: relative;
+
+  &--leaf {
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../../img/leaf.svg") no-repeat;
+      width: 60px;
+      height: 60px;
+      top: -2px;
+      bottom: auto;
+    }
+  }
+
+  &--glass {
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../../img/glass.svg") no-repeat;
+      width: 60px;
+      height: 60px;
+      top: -2px;
+      bottom: auto;
+    }
+  }
+
+  &--fork-knife {
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../../img/fork_knife.svg") no-repeat;
+      width: 60px;
+      height: 60px;
+      top: -2px;
+      bottom: auto;
+    }
+  }
+
+  &--scales {
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../../img/libra.svg") no-repeat;
+      width: 60px;
+      height: 60px;
+      top: -2px;
+      bottom: auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 250px;
+    min-height: 275px;
+    margin-top: 42px;
+
     &:first-child {
       margin-left: 0;
     }
@@ -76,19 +142,10 @@
   }
 }
 
-.principle__item {
-  font-weight: normal;
-  margin-top: 25px;
-  min-width: 100%;
 
-  @media (min-width: $tablet-width) {
-    min-width: 250px;
-    min-height: 280px;
-    margin-top: 40px;
-  }
-}
 
 .principle__description {
+  margin-top: 16px;
   padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-size: 14px;

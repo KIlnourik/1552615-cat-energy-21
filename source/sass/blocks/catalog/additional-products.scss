@@ -3,6 +3,10 @@
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .additional-products__wrapper {
@@ -10,14 +14,19 @@
   flex-direction: column;
   padding: 0 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 32px 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 0 110px;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .additional-products__header {
-  padding-left: 20px;
+  margin-left: 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
@@ -33,22 +42,84 @@
     border: 1px solid $basic_green;
     background-color: $basic_green;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+    margin-left: 0;
+    padding-left: 67px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 23px;
+      min-width: 325px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      min-width: 29px;
+      top: 23px;
+      right: auto;
+      left: 0;
+      border: 1px solid $basic_green;
+      background-color: $basic_green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 110px;
+
+    &::after {
+      min-width: 955px;
+    }
+
+    &::before {
+      min-width: 67px;
+    }
+  }
 }
 
 .additional-products__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 50px;
+  }
 }
 
 .additional-products__item {
   padding: 12px 0;
   border-top: 1px solid $border-grey;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 36px 0 38px;
+    min-height: 139px;
+    border: 1px solid $border-grey;
+    border-bottom: none;
+    box-sizing: border-box;
+    position: relative;
+
+    &:last-child {
+      border-bottom: 1px solid $border-grey;
+    }
+  }
+
   @media (min-width: $desktop-width) {
-    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 895px;
+    min-height: 72px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: none;
+    border-top: 1px solid $border-grey;
   }
 }
 
@@ -59,11 +130,36 @@
   text-transform: uppercase;
   text-decoration: none;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    min-width: 290px;
+    position: static;
+
+  }
 }
 
 .additional-products__parameters {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 287px;
+    justify-content: space-between;
+  }
 }
 
 .additional-products__volume,
@@ -72,6 +168,24 @@
   font-size: 14px;
   line-height: 14px;
   color: $special_darkest-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional-products__price {
+  @media (min-width: $tablet-width) {
+    min-width: 92px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 44px;
+    text-align: left;
+  }
 }
 
 .additional-products__button {
@@ -88,8 +202,17 @@
   background-color: $basic_green;
   display: block;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+    margin-top: 6px;
+    min-height: 27px;
+    min-width: 632px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 15px;
     min-width: 244px;
+    height: 29px;
   }
 }
 
@@ -103,11 +226,13 @@
   color: $basic_white;
 
   @media (min-width: $tablet-width) {
+    margin-right: 4px;
     min-height: 200px;
     background-image: url("../../../img/gift-photo-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 0;
     min-width: 245px;
     min-height: 289px;
     background-image: url("../../../img/gift-photo-desktop.jpg");

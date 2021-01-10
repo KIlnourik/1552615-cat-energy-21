@@ -8,7 +8,7 @@
   top: 0;
   right: 0;
   width: 64px;
-  height: 66px;
+  height: 65px;
   background-color: $basic_white;
   border: none;
 
@@ -23,7 +23,7 @@
   top: 22px;
   left: 20px;
   width: 24px;
-  height: 1.5px;
+  height: 2px;
   background-color: $basic_black;
   box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
 }
@@ -40,7 +40,7 @@
     top: 33px;
     right: 20px;
     width: 25px;
-    height: 1.5px;
+    height: 2px;
     background-color: $basic_black;
   }
 
@@ -72,7 +72,7 @@
     flex-direction: row;
     justify-content: space-between;
     max-height: 100%;
-    width: 100%;
+    min-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,30 +80,8 @@
   }
 }
 
-.main-nav__list .main-nav__item {
-  padding-left: 15px;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 20px;
-
-    &:last-child {
-      padding-right: 30px;
-    }
-  }
-
-  &:first-child {
-    padding-right: 20px;
-    border-top: 1px solid $border-grey;
-
-    @media (min-width: $tablet-width) {
-      border-top: none;
-      padding-left: 30px;
-      padding-right: 0;
-    }
-  }
-}
-
 .main-nav__item {
+  padding-left: 15px;
   min-height: 66px;
   max-width: 100%;
   border-bottom: 1px solid $border-grey;
@@ -111,16 +89,45 @@
   justify-content: center;
   align-items: center;
 
+  &:first-child {
+    padding-right: 20px;
+    border-top: 1px solid $border-grey;
+  }
+
   @media (min-width: $tablet-width) {
+    padding-top: 11px;
+    padding-right: 22px;
     border-bottom: none;
-    min-height: 100px;
+    min-height: 95px;
+    font-family: "Oswald Regular", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
+
+    &:first-child {
+      border-top: none;
+      padding-left: 10px;
+      padding-right: 19px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 8px;
     border-bottom: none;
     min-height: 170px;
+
+    &:first-child {
+      padding-right: 11px;
+    }
+
+    &:last-child {
+      padding-right: 30px;
+    }
   }
 }
 
@@ -128,12 +135,30 @@
   color: $basic_black;
   text-decoration: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 32px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    height: 38px;
   }
 }
 
+.main-nav__link--active {
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic_green;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
+}
 .main-nav__link--index {
   @media (min-width: $desktop-width) {
     color: $basic_white;

@@ -5,6 +5,11 @@
   font-weight: normal;
   text-align: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 37px;
+  }
 }
 
 .more-products__subtitle {
@@ -35,7 +40,40 @@
     transform: rotate(90deg);
     background-color: $plus-grey;
   }
-}
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      margin-top: 70px;
+      width: 150px;
+      font-size: 20px;
+      line-height: 22px;
+
+      &::before {
+        top: 11px;
+        left: 130px;
+        width: 60px;
+      }
+
+      &::after {
+        top: 10px;
+        left: 132px;
+        width: 60px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+
+      &::before {
+        top: 11px;
+        left: 91px;
+      }
+
+      &::after {
+        top: 9px;
+        left: 92px;
+      }
+    }
+  }
 
 .more-products__text {
   margin-top: 8px;
@@ -44,6 +82,14 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more-products__button {
@@ -57,4 +103,13 @@
   background-color: $basic_grey;
   text-decoration: none;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 87px;
+    min-width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 169px;
+  }
 }

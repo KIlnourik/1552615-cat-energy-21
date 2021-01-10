@@ -1,12 +1,20 @@
+.slider__toggles {
+  margin: 0 auto;
+  
+}
+
 .slider__toggle {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  border: none;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }
 }
+
+

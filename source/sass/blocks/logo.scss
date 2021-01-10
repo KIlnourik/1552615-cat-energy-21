@@ -1,0 +1,36 @@
+.logo {
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+}
+
+.logo__mobile-cat {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__cat {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.logo__rays {
+  display: none;
+}
+
+.logo__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

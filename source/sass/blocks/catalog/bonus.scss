@@ -1,6 +1,17 @@
 .bonus {
   margin-top: 23px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+    margin-bottom: 76px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 51px;
+    margin-bottom: 86px;
+  }
 }
 
 .bonus__slogan {
@@ -10,4 +21,17 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 73px 51px 66px 373px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-top: 185px;
+    padding: 0;
+    width: 170px;
+    text-align: center;
+  }
 }

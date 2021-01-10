@@ -31,8 +31,9 @@
   height: 64px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 15px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 25px;
   }
 }
 
@@ -43,6 +44,7 @@
   height: 50px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 15px;
     font-size: 16px;
     line-height: 20px;
     width: 160px;
@@ -51,5 +53,12 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.location__city {
+
+  @media (min-width: $tablet-width) {
+    line-height: 55px;
   }
 }
