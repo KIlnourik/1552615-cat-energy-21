@@ -1,7 +1,7 @@
 .location {
   padding: 20px;
-  padding-top: 10px;
-  padding-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -21,11 +21,13 @@
 }
 
 .location__invitation {
+  margin-top: 18px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  vertical-align: top;
   display: inline-block;
   width: 135px;
   height: 64px;
@@ -37,9 +39,16 @@
   }
 }
 
+.location__welcome {
+  line-height: 28px;
+}
+
 .location__address {
+  margin-top: 23px;
+  margin-left: 1px;
   line-height: 20px;
   display: inline-block;
+  vertical-align: top;
   width: 140px;
   height: 50px;
 
