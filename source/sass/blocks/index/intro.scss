@@ -16,7 +16,12 @@
 
   @media (min-width: $tablet-width) {
     background: url("../../../img/index-can-tablet.jpg") no-repeat 49% 116%;
-    min-height: 805px;
+    height: 805px;
+
+    @media (min-width: 2dppx) {
+      background-image: url(../../../img/index-can-tablet@2x.jpg);
+      background-size: auto 805px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +38,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 7px;
+    margin-top: 6px;
     padding: 0 117px;
     color: $basic_black;
     text-align: start;
@@ -110,12 +115,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
-    margin-left: 111px;
-    padding: 16px 26px 16px;
+    margin-top: 48px;
+    margin-left: 112px;
+    padding: 18px 26px 0;
     font-size: 20px;
     line-height: 20px;
     width: 192px;
+    height: 36px;
   }
 
   @media (min-width: $desktop-width) {

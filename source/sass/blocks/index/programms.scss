@@ -1,5 +1,9 @@
 .programms {
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
 }
 
 .programms__list {
@@ -74,6 +78,14 @@
       position: absolute;
       top: 22px;
       left: 21px;
+
+      @media (min-width: $tablet-width) {
+        width: 200px;
+        height: 211px;
+        right: 62px;
+        left: auto;
+        top: 81px;
+      }
     }
   }
 
@@ -104,6 +116,23 @@
   }
 }
 
+.programms__catslim-logo {
+  width: 51px;
+  height: 51px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+}
+
+.programms__slim-cat {
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 192px;
+  }
+}
+
 .programms__description {
   padding-top: 4px;
   padding-bottom: 22px;
@@ -118,7 +147,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-left: 32px;
+    padding-left: 52px;
     margin: 25px 0;
     width: 380px;
     font-size: 16px;
