@@ -69,8 +69,14 @@
       background: url("../../../img/leaf.svg") no-repeat;
       width: 60px;
       height: 60px;
-      top: -2px;
+      top: -3px;
       bottom: auto;
+
+      @media (min-width:$tablet-width) {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+      }
     }
   }
 
@@ -82,7 +88,7 @@
       background: url("../../../img/glass.svg") no-repeat;
       width: 60px;
       height: 60px;
-      top: -2px;
+      top: -3px;
       bottom: auto;
     }
   }
@@ -95,7 +101,7 @@
       background: url("../../../img/fork_knife.svg") no-repeat;
       width: 60px;
       height: 60px;
-      top: -2px;
+      top: -3px;
       bottom: auto;
     }
   }
@@ -108,7 +114,7 @@
       background: url("../../../img/libra.svg") no-repeat;
       width: 60px;
       height: 60px;
-      top: -2px;
+      top: -3px;
       bottom: auto;
     }
   }
