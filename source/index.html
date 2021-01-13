@@ -149,7 +149,7 @@
         <ul class="example__results-list">
           <li class="example__results-item">
             <span class="example__results-quantity">5 кг </span>
-            <p class="example__results">снижение веса</p>
+            <p class="example__results example__results--weight">снижение веса</p>
           </li>
           <li class="example__results-item">
             <span class="example__results-quantity">60 дней</span>
@@ -160,7 +160,8 @@
       </div>
 
       <div class="example__slider slider">
-        <picture class="slider__image-wrapper">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x 2x.png" alt="Кот до и после диеты" width="708" heigth="620">
           <img src="img/cat-fat.png" alt="Фото толстого кота" class="slider__image" width="311" heigth="232"
             srcset="img/cat-fat@2x.png 2x">
         </picture>
