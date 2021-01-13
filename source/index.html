@@ -98,21 +98,37 @@
         <h3 class="principle__header">Как это работает</h3>
         <ul class="principle__list">
           <li class="principle__item principle__item--leaf">
+            <svg class="principle__icon">
+              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
+              <use class="principle__leaf" xlink:href="img/sprite.svg#leaf"></use>
+            </svg>
             <p class="principle__description">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
           <li class="principle__item principle__item--glass">
+            <svg class="principle__icon">
+              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
+              <use class="principle__glass" xlink:href="img/sprite.svg#glass"></use>
+            </svg>
             <p class="principle__description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
-          <li class="principle__item principle__item--fork-knife">
+          <li class="principle__item principle__item--cutlery">
+            <svg class="principle__icon">
+              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
+              <use class="principle__cutlery" xlink:href="img/sprite.svg#cutlery"></use>
+            </svg>
             <p class="principle__description">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
-          <li class="principle__item principle__item--scales">
+          <li class="principle__item principle__item--alarm">
+            <svg class="principle__icon">
+              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
+              <use class="principle__alarm" xlink:href="img/sprite.svg#alarm"></use>
+            </svg>
             <p class="principle__description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
             </p>
@@ -144,8 +160,9 @@
       </div>
 
       <div class="example__slider slider">
-        <picture>
-          <img src="img/cat-fat.png" alt="Фото толстого кота" class="slider__image" srcset="img/cat-fat@2x.png 2x">
+        <picture class="slider__image-wrapper">
+          <img src="img/cat-fat.png" alt="Фото толстого кота" class="slider__image" width="311" heigth="232"
+            srcset="img/cat-fat@2x.png 2x">
         </picture>
 
         <div class="slider__scale-bar">
@@ -179,19 +196,34 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--vkontakte">Вконтакте</a>
+            <a href="#" class="social__link social__link--vkontakte" aria-label="Vkontakte">
+              <svg class="social__icon social__icon--vkontakte">
+                <use class="social__vkontakte" xlink:href="img/sprite.svg#vkontakte"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--instagram">Инстаграмм</a>
+            <a href="#" class="social__link social__link--instagram" aria-label="Instagram">
+              <svg class="social__icon social__icon--instagram">
+                <use class="social__instagram" xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">Твиттер</a>
+            <a href="#" class="social__link social__link--facebook" aria-label="Facebook">
+              <svg class="social__icon social__icon--facebook">
+                <use class="social__facebook" xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy
-          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="copyright__logo">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Сайт HTML Academy">HTML
+          Academy
+          <svg class="copyright__logo">
+            <use class="copyright__html-academy" xlink:href="img/sprite.svg#html-academy"></use>
+          </svg>
         </a>
       </div>
     </div>

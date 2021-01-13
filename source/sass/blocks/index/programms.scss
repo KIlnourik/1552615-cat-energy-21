@@ -100,6 +100,15 @@
       position: absolute;
       top: 24px;
       left: 13px;
+
+      @media (min-width: $tablet-width) {
+        background-image: url("../../../img/cat_pro_tablet.svg");
+        width: 268px;
+        height: 202px;
+        right: 28px;
+        left: auto;
+        top: 91px;
+      }
     }
   }
 

@@ -51,7 +51,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
   }
 }
 
@@ -61,68 +60,71 @@
   min-width: 100%;
   position: relative;
 
-  &--leaf {
+  // &--fork-knife {
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     background: url("../../../img/fork_knife.svg") no-repeat;
+  //     width: 60px;
+  //     height: 60px;
+  //     top: -3px;
+  //     bottom: auto;
+  //   }
+  // }
 
-    &::before {
-      content: "";
-      position: absolute;
-      background: url("../../../img/leaf.svg") no-repeat;
-      width: 60px;
-      height: 60px;
-      top: -3px;
-      bottom: auto;
-
-      @media (min-width:$tablet-width) {
-        width: 80px;
-        height: 80px;
-        background-size: 80px 80px;
-      }
-    }
-  }
-
-  &--glass {
-
-    &::before {
-      content: "";
-      position: absolute;
-      background: url("../../../img/glass.svg") no-repeat;
-      width: 60px;
-      height: 60px;
-      top: -3px;
-      bottom: auto;
-    }
-  }
-
-  &--fork-knife {
-
-    &::before {
-      content: "";
-      position: absolute;
-      background: url("../../../img/fork_knife.svg") no-repeat;
-      width: 60px;
-      height: 60px;
-      top: -3px;
-      bottom: auto;
-    }
-  }
-
-  &--scales {
-
-    &::before {
-      content: "";
-      position: absolute;
-      background: url("../../../img/libra.svg") no-repeat;
-      width: 60px;
-      height: 60px;
-      top: -3px;
-      bottom: auto;
-    }
-  }
+  // &--scales {
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     background: url("../../../img/libra.svg") no-repeat;
+  //     width: 60px;
+  //     height: 60px;
+  //     top: -3px;
+  //     bottom: auto;
+  //   }
+  // }
 
   @media (min-width: $tablet-width) {
     min-width: 250px;
     min-height: 275px;
-    margin-top: 42px;
+    margin-top: 30px;
+    padding-top: 8px;
+
+    &--leaf {
+      background: url("../../../img/num_1.png") no-repeat 70% 5%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/num_1@2x.png");
+        background-size: auto 80%;
+      }
+    }
+
+    &--glass {
+      background: url("../../../img/num_2.png") no-repeat 90% 2%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/num_2@2x.png");
+        background-size: auto 80%;
+      }
+    }
+
+    &--cutlery {
+      background: url("../../../img/num_3.png") no-repeat 90% 2%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/num_3@2x.png");
+        background-size: auto 82%;
+      }
+    }
+
+    &--alarm {
+      background: url("../../../img/num_4.png") no-repeat 97% 2%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/num_4@2x.png");
+        background-size: auto 80%;
+      }
+    }
 
     &:first-child {
       margin-left: 0;
@@ -130,6 +132,11 @@
 
     &:nth-child(2n) {
       margin-right: 75px;
+    }
+
+    &:nth-child(2n + 1),
+    &:nth-child(4n) {
+      margin-bottom: 4px;
     }
   }
 
@@ -148,16 +155,58 @@
   }
 }
 
+.principle__icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -3px;
+  bottom: auto;
 
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 2px;
+    bottom: auto;
+  }
+}
+
+.principle__leaf {
+  @media (min-width: $tablet-width) {
+    x: 9;
+    y: 10;
+  }
+}
+
+.principle__glass {
+  @media (min-width: $tablet-width) {
+    x: 10;
+    y: 10;
+  }
+}
+
+.principle__cutlery {
+  @media (min-width: $tablet-width) {
+    x: 10;
+    y: 10;
+  }
+}
+
+.principle__alarm {
+  @media (min-width: $tablet-width) {
+    x: 10;
+    y: 10;
+  }
+}
 
 .principle__description {
-  margin-top: 16px;
+  margin-top: 15px;
   padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 20px;
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;

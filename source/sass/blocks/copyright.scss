@@ -16,7 +16,6 @@
 }
 
 .copyright__link {
-
   padding-top: 30px;
   font-size: 16px;
   line-height: 18px;
@@ -25,12 +24,17 @@
   display: block;
   text-decoration: none;
   position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
-  // padding-top: 20px;
   position: absolute;
-  top: 25px;
+  width: 27px;
+  height: 34px;
+  top: 23px;
   right: 0;
   left: auto;
 
@@ -38,3 +42,23 @@
     margin-left: 20px;
   }
 }
+
+.copyright__link .copyright__html-academy {
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+// .copyright__html-academy {
+//   &:hover {
+//     color: $basic_green;
+//   }
+
+//   &:active {
+//     opacity: 0.3;
+//   }
+// }
