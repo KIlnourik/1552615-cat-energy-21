@@ -2,7 +2,7 @@
   margin-top: 32px;
 
   @media (min-width: $tablet-width) {
-    height: 425px;
+    height: 407px;
     position: relative;
   }
 
@@ -42,17 +42,16 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 300px;
-    margin-bottom: 20px;
     position: absolute;
     top: auto;
-    bottom: 30px;
+    bottom: 42px;
+    left: 88px;
   }
 }
 
 .slider__bar {
   margin-top: 14px;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-left: 14px;
   content: "";
   width: 84px;
@@ -64,6 +63,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    margin-left: 19px;
+    margin-right: 14px;
     width: 428px;
     height: 6px;
     background-color: $special_radio_grey;
@@ -79,6 +80,20 @@
     border-radius: 6px;
     position: absolute;
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      border: 12px solid $basic_white;
+      border-radius: 50%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+      top: -14px;
+      left: 197px;
+
+      &:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+      }
+    }
   }
 }
 
