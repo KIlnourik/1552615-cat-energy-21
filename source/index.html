@@ -168,10 +168,12 @@
         </picture>
 
         <div class="slider__scale-bar">
-          <button class="slider__toggle slider__toggle--before" type="button">Было</button>
+          <label class="slider__toggle slider__toggle--before" for="button-before">Было</label>
+          <input type="radio" class="slider__input-button visually-hidden" id="button-before">
           <p class="slider__bar"></p>
           <p class="slider__scale-toggle"></p>
-          <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
+          <label class="slider__toggle slider__toggle--after" for="button-after">Стало</label>
+          <input type="radio" class="slider__input-button visually-hidden" id="button-after">
         </div>
       </div>
     </section>
