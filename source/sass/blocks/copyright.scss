@@ -5,7 +5,9 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-left: 80px;
+    margin-top: 26px;
+    padding-left: 0;
+    padding-right: 1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +30,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+  }
 }
 
 .copyright__logo {
@@ -37,28 +43,14 @@
   top: 23px;
   right: 0;
   left: auto;
+  color: $special_grey;
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;
+    top: 24px;
   }
 }
 
-.copyright__link .copyright__html-academy {
-  &:hover {
-    color: $basic_green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.copyright__link:hover > .copyright__logo {
+  color: $basic_green;
 }
-
-// .copyright__html-academy {
-//   &:hover {
-//     color: $basic_green;
-//   }
-
-//   &:active {
-//     opacity: 0.3;
-//   }
-// }
