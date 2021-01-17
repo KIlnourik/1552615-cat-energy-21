@@ -1,7 +1,9 @@
 .principle {
   margin-top: 8px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
     border-bottom: 1px solid $border-grey;
   }
 
@@ -19,13 +21,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0 105px 0 110px;
   }
 }
 
 .principle__header {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
@@ -38,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
+    margin-top: 52px;
   }
 }
 
@@ -52,46 +54,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    // justify-content: start;
+  }
 }
 
 .principle__item {
   font-weight: normal;
-  margin-top: 26px;
-  min-width: 100%;
-  position: relative;
-
-  // &--fork-knife {
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     background: url("../../../img/fork_knife.svg") no-repeat;
-  //     width: 60px;
-  //     height: 60px;
-  //     top: -3px;
-  //     bottom: auto;
-  //   }
-  // }
-
-  // &--scales {
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     background: url("../../../img/libra.svg") no-repeat;
-  //     width: 60px;
-  //     height: 60px;
-  //     top: -3px;
-  //     bottom: auto;
-  //   }
-  // }
+  margin-top: 20px;
+  max-width: 100%;
+  display: flex;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
     min-width: 250px;
     min-height: 275px;
     margin-top: 30px;
-    padding-top: 8px;
+    padding-top: 5px;
 
     &--leaf {
-      background: url("../../../img/num_1.png") no-repeat 70% 5%;
+      background: url("../../../img/num_1.png") no-repeat 70% 10%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../../img/num_1@2x.png");
@@ -100,7 +83,7 @@
     }
 
     &--glass {
-      background: url("../../../img/num_2.png") no-repeat 90% 2%;
+      background: url("../../../img/num_2.png") no-repeat 89% 5%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../../img/num_2@2x.png");
@@ -109,7 +92,7 @@
     }
 
     &--cutlery {
-      background: url("../../../img/num_3.png") no-repeat 90% 2%;
+      background: url("../../../img/num_3.png") no-repeat 90% 6%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../../img/num_3@2x.png");
@@ -118,7 +101,7 @@
     }
 
     &--alarm {
-      background: url("../../../img/num_4.png") no-repeat 97% 2%;
+      background: url("../../../img/num_4.png") no-repeat 96% 10%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../../img/num_4@2x.png");
@@ -131,16 +114,18 @@
     }
 
     &:nth-child(2n) {
-      margin-right: 75px;
+      margin-right: 74px;
     }
 
     &:nth-child(2n + 1),
     &:nth-child(4n) {
-      margin-bottom: 4px;
+      margin-bottom: 7px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 4px;
+
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -155,62 +140,48 @@
   }
 }
 
-.principle__icon {
-  position: absolute;
+.principle__icon-wrapper {
+  margin: 0;
+  padding: 0;
   width: 60px;
   height: 60px;
-  top: -3px;
-  bottom: auto;
+  background-color: $basic_green;
 
   @media (min-width: $tablet-width) {
+    // margin-right: 1px;
     width: 80px;
     height: 80px;
-    top: 2px;
-    bottom: auto;
+    position: relative;
   }
 }
 
-.principle__leaf {
-  @media (min-width: $tablet-width) {
-    x: 9;
-    y: 10;
-  }
-}
+.principle__icon {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
 
-.principle__glass {
   @media (min-width: $tablet-width) {
-    x: 10;
-    y: 10;
-  }
-}
-
-.principle__cutlery {
-  @media (min-width: $tablet-width) {
-    x: 10;
-    y: 10;
-  }
-}
-
-.principle__alarm {
-  @media (min-width: $tablet-width) {
-    x: 10;
-    y: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .principle__description {
-  margin-top: 15px;
-  padding-left: 80px;
+  margin: 0;
+  margin-top: 2px;
+  padding-left: 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 32px;
+    padding-left: 0;
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
-    padding-left: 0;
-    padding-top: 86px;
   }
 }

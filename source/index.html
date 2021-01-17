@@ -65,7 +65,7 @@
             поможет вашему питомцу сбросить лишний вес.
           </p>
           <a href="#" class="programms__link">Каталог Slim
-            <svg class="programms__arrow" width="24" height="12" viewBox="0 0 24 12" fill="none"
+            <svg class="programms__arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <line class="programms__arrow-body" y1="6" x2="18" y2="6" stroke="currentColor" stroke-width="2" />
               <path class="programms__arrow-triangle" d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
@@ -81,7 +81,7 @@
             необходимые<br class="programms__tablet-br"> мышцы!
           </p>
           <a href="#" class="programms__link programms__link--pro">Каталог Pro
-            <svg class="programms__arrow programms__arrow--pro" width="24" height="12" viewBox="0 0 24 12" fill="none"
+            <svg class="programms__arrow programms__arrow--pro" width="32" height="12" viewBox="0 0 32 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <line class="programms__arrow-body" y1="6" x2="18" y2="6" stroke="currentColor" stroke-width="2" />
               <path class="programms__arrow-triangle" d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
@@ -98,37 +98,41 @@
         <h3 class="principle__header">Как это работает</h3>
         <ul class="principle__list">
           <li class="principle__item principle__item--leaf">
-            <svg class="principle__icon">
-              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
-              <use class="principle__leaf" xlink:href="img/sprite.svg#leaf"></use>
-            </svg>
+            <div class="principle__icon-wrapper">
+              <svg class="principle__icon">
+                <use xlink:href="img/sprite.svg#leaf"></use>
+              </svg>
+            </div>
             <p class="principle__description">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
           <li class="principle__item principle__item--glass">
-            <svg class="principle__icon">
-              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
-              <use class="principle__glass" xlink:href="img/sprite.svg#glass"></use>
-            </svg>
+            <div class="principle__icon-wrapper">
+              <svg class="principle__icon">
+                <use xlink:href="img/sprite.svg#glass"></use>
+              </svg>
+            </div>
             <p class="principle__description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
           <li class="principle__item principle__item--cutlery">
-            <svg class="principle__icon">
-              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
-              <use class="principle__cutlery" xlink:href="img/sprite.svg#cutlery"></use>
-            </svg>
+            <div class="principle__icon-wrapper">
+              <svg class="principle__icon">
+                <use class="principle__cutlery" xlink:href="img/sprite.svg#cutlery"></use>
+              </svg>
+            </div>
             <p class="principle__description">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="principle__item principle__item--alarm">
-            <svg class="principle__icon">
-              <use class="principle__rectangle" xlink:href="img/sprite.svg#rectangle"></use>
-              <use class="principle__alarm" xlink:href="img/sprite.svg#alarm"></use>
-            </svg>
+            <div class="principle__icon-wrapper">
+              <svg class="principle__icon">
+                <use class="principle__alarm" xlink:href="img/sprite.svg#alarm"></use>
+              </svg>
+            </div>
             <p class="principle__description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
             </p>
@@ -161,20 +165,29 @@
 
       <div class="example__slider slider">
         <picture>
+          <source media="(min-width: 1440px)" srcset="img/image_cat_desktop.png 1x, img/image_cat_desktop@2x.png 2x"
+            alt="Кот до и после диеты" width="690" heigth="656">
           <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x.png 2x"
             alt="Кот до и после диеты" width="708" heigth="620">
-          <img src="img/cat-fat.png" alt="Фото толстого кота" class="slider__image" width="311" heigth="232"
+          <img src="img/cat-fat.png" alt="Фото толстого кота" class="slider__image" width="314" heigth="232"
             srcset="img/cat-fat@2x.png 2x">
         </picture>
-
         <div class="slider__scale-bar">
-          <label class="slider__toggle slider__toggle--before" for="button-before">Было</label>
-          <input type="radio" class="slider__input-button visually-hidden" id="button-before">
-          <p class="slider__bar"></p>
-          <p class="slider__scale-toggle"></p>
-          <label class="slider__toggle slider__toggle--after" for="button-after">Стало</label>
-          <input type="radio" class="slider__input-button visually-hidden" id="button-after">
+
+          <button class="slider__button slider__button--then" type="button">Было</button>
+
+          <div class="slider__bar">
+            <div class="slider__scale-toggle"></div>
+          </div>
+
+          <input type="range" class="slider__input-range input-range" id="slider-range" name="slider-range" min="1"
+            max="3" value="2">
+          <label class="slider__input-label visually-hidden" for="slider-range "></label>
+
+          <button class="slider__button slider__button--now" type="button">Стало</button>
+
         </div>
+
       </div>
     </section>
   </main>
