@@ -159,10 +159,13 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    border-bottom: 2px solid $basic_green;
+    text-decoration: underline 2px solid $basic_green;
+    text-underline-offset: 12px;
+    // border-bottom: 2px solid $basic_green;
   }
 
   @media (min-width: $desktop-width) {
+    text-decoration: underline 2px solid $basic_white;
   }
 }
 

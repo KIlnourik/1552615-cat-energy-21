@@ -5,10 +5,11 @@
   font-size: 12px;
   line-height: 12px;
   padding: 20px;
+  padding-right: 19px;
   color: $special_dark-grey;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   border-top: 1px solid $border-grey;
   position: relative;
 
@@ -30,7 +31,7 @@
       margin-right: 29px;
     }
 
-    &:nth-last-child(-n+2) {
+    &:nth-last-child(-n + 2) {
       margin-bottom: 60px;
     }
 
@@ -49,7 +50,7 @@
     min-height: 431px;
 
     &:first-child,
-    &:nth-child(4n+1) {
+    &:nth-child(4n + 1) {
       margin-left: 0;
     }
 
@@ -57,7 +58,7 @@
       margin-right: 0;
     }
 
-    &:nth-last-child(-n+4) {
+    &:nth-last-child(-n + 4) {
       margin-bottom: 65px;
     }
   }
@@ -87,7 +88,6 @@
 }
 
 .product__mobile-br {
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -97,7 +97,32 @@
   margin-right: 40px;
   position: absolute;
   top: 30px;
-  left: 47px;
+  left: 48px;
+
+  &--small-chicken {
+    top: 32px;
+    left: 56px;
+  }
+
+  &--small-fish {
+    top: 44px;
+    left: 56px;
+  }
+
+  &--small-buckwheat {
+    top: 48px;
+    left: 56px;
+  }
+
+  &--small-rice {
+    top: 42px;
+    left: 54px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
 }
 
 .product__parameters {
@@ -117,7 +142,6 @@
 }
 
 .product__row {
-
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special_radio_grey;
   }
@@ -126,8 +150,7 @@
 .product__parameter {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     padding-top: 6px;
@@ -137,14 +160,19 @@
 
 .product__value {
   margin: 0;
-  padding: 2px 0;
+  padding: 0;
+  padding-bottom: 4px;
   margin-left: 70px;
   text-align: end;
+
+  &--weight {
+    padding-right: 3px;
+  }
 }
 
 .product__button {
-  margin-top: 18px;
-  margin-bottom: 4px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   padding-top: 10px;
   min-height: 30px;
   font-family: "Oswald Regular", "Arial", sans-serif;
@@ -159,6 +187,15 @@
   text-align: center;
   display: inline-block;
   vertical-align: middle;
+
+  &:hover {
+    background-color: $basic_green_action;
+  }
+
+  &:active {
+    background: $basic_green_action;
+    color: $basic_white_action;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 37px;

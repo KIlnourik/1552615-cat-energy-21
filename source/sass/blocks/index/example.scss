@@ -9,11 +9,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     margin-top: 22px;
     position: relative;
-    display: flex;
-    // flex-direction: row;
-    justify-content: start;
   }
 }
 
@@ -34,11 +32,20 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    margin-bottom: 72px;
+    margin-bottom: 0;
     padding: 0 110px;
-    padding-bottom: 70px;
-    // min-width: 1440px;
+    padding-bottom: 78px;
+    min-width: 1220px;
     background-color: $basic_white;
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 462px;
   }
 }
 
@@ -57,7 +64,6 @@
     padding: 0;
     margin: 0;
     background-color: $basic_grey;
-    display: inline-block;
   }
 }
 
@@ -79,7 +85,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
-    margin-top: 5px;
+    margin-top: 65px;
     width: 439px;
     height: auto;
   }
@@ -96,6 +102,11 @@
   @media (min-width: $tablet-width) {
     margin-right: 10px;
     width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-top: 59px;
   }
 }
 
@@ -165,6 +176,14 @@
   @media (min-width: $desktop-width) {
     margin-left: 110px;
     margin-top: 25px;
+    background-color: $basic_grey;
+    top: 37px;
+    left: -101px;
+    right: auto;
+
+    &--weight {
+      left: -86px;
+    }
   }
 }
 
@@ -189,9 +208,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin-left: 36px;
+    margin-top: 55px;
     display: block;
-    width: 300px;
+    width: 400px;
     position: static;
+  }
+}
+
+.example__sum {
+  @media (min-width: $desktop-width) {
+    padding-left: 57px;
   }
 }

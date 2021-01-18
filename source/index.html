@@ -143,51 +143,51 @@
 
     <section class="example">
       <h2 class="visually-hidden">Пример использования питания Cat Energy</h2>
-      <div class="example__wrapper">
-        <h3 class="example__header">Живой пример</h3>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат
-          без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="example__results-list">
-          <li class="example__results-item">
-            <span class="example__results-quantity">5 кг </span>
-            <p class="example__results example__results--weight">снижение веса</p>
-          </li>
-          <li class="example__results-item">
-            <span class="example__results-quantity">60 дней</span>
-            <p class="example__results">затрачено времени</p>
-          </li>
-        </ul>
-        <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-      </div>
-
-      <div class="example__slider slider">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/image_cat_desktop.png 1x, img/image_cat_desktop@2x.png 2x"
-            alt="Кот до и после диеты" width="690" heigth="656">
-          <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x.png 2x"
-            alt="Кот до и после диеты" width="708" heigth="620">
-          <img src="img/cat-fat.png" alt="Фото толстого кота" class="slider__image" width="314" heigth="232"
-            srcset="img/cat-fat@2x.png 2x">
-        </picture>
-        <div class="slider__scale-bar">
-
-          <button class="slider__button slider__button--then" type="button">Было</button>
-
-          <div class="slider__bar">
-            <div class="slider__scale-toggle"></div>
-          </div>
-
-          <input type="range" class="slider__input-range input-range" id="slider-range" name="slider-range" min="1"
-            max="3" value="2">
-          <label class="slider__input-label visually-hidden" for="slider-range "></label>
-
-          <button class="slider__button slider__button--now" type="button">Стало</button>
-
+      <h3 class="example__header">Живой пример</h3>
+      <div class="example__container">
+        <div class="example__wrapper">
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy&nbsp;Slim. Отличный результат
+            без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <ul class="example__results-list">
+            <li class="example__results-item">
+              <span class="example__results-quantity">5 кг </span>
+              <p class="example__results example__results--weight">снижение веса</p>
+            </li>
+            <li class="example__results-item">
+              <span class="example__results-quantity">60 дней</span>
+              <p class="example__results">затрачено времени</p>
+            </li>
+          </ul>
+          <p class="example__cost">Затраты на питание: <span class="example__sum">15 000 руб.</span></p>
         </div>
 
+        <div class="example__slider slider">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/image_cat_desktop.png 1x, img/image_cat_desktop@2x.png 2x"
+              alt="Кот до и после диеты" width="690" heigth="656">
+            <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x.png 2x"
+              alt="Кот до и после диеты" width="708" heigth="620">
+            <img src="img/cat-fat.png" alt="Фото толстого кота" class="slider__image" width="314" heigth="232"
+              srcset="img/cat-fat@2x.png 2x">
+          </picture>
+          <div class="slider__scale-bar">
+
+            <button class="slider__button slider__button--then" type="button">Было</button>
+
+            <div class="slider__bar">
+              <div class="slider__scale-toggle"></div>
+            </div>
+
+            <input type="range" class="slider__input-range input-range" id="slider-range" name="slider-range" min="1"
+              max="3" value="2">
+            <label class="slider__input-label visually-hidden" for="slider-range "></label>
+
+            <button class="slider__button slider__button--now" type="button">Стало</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>

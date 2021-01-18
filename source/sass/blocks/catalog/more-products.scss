@@ -1,5 +1,5 @@
 .more-products {
-  padding-top: 20px;
+  padding-top: 18px;
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -41,39 +41,38 @@
     background-color: $plus-grey;
   }
 
-    @media (min-width: $tablet-width) {
-      margin: 0 auto;
-      margin-top: 70px;
-      width: 150px;
-      font-size: 20px;
-      line-height: 22px;
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 150px;
+    font-size: 20px;
+    line-height: 22px;
 
-      &::before {
-        top: 11px;
-        left: 130px;
-        width: 60px;
-      }
-
-      &::after {
-        top: 10px;
-        left: 132px;
-        width: 60px;
-      }
+    &::before {
+      top: 11px;
+      left: 130px;
+      width: 60px;
     }
 
-    @media (min-width: $desktop-width) {
-
-      &::before {
-        top: 11px;
-        left: 91px;
-      }
-
-      &::after {
-        top: 9px;
-        left: 92px;
-      }
+    &::after {
+      top: 10px;
+      left: 132px;
+      width: 60px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 11px;
+      left: 91px;
+    }
+
+    &::after {
+      top: 9px;
+      left: 92px;
+    }
+  }
+}
 
 .more-products__text {
   margin-top: 8px;
@@ -103,6 +102,14 @@
   background-color: $basic_grey;
   text-decoration: none;
   display: block;
+
+  &:hover {
+    background-color: $special_button_hover_grey;
+  }
+
+  &:active {
+    color: $special_dark-grey_action;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 87px;

@@ -11,9 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 45px;
-    margin-left: 330px;
-    height: 149px;
+    margin-top: 32px;
+    // margin-left: 330px;
   }
 }
 
@@ -32,6 +31,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-right: 50px;
   }
 }

@@ -7,10 +7,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    // position: absolute;
-    display: inline-block;
-    width: 100%;
+    margin: 0;
+    width: 395px;
     height: 462px;
+    background-color: $light_grey;
   }
 }
 
@@ -29,10 +29,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    // position: static;
     width: 690px;
     height: 656px;
-    left: 0;
+    top: -194px;
+    bottom: auto;
+    left: auto;
+    right: 70px;
   }
 }
 
@@ -54,6 +56,13 @@
     bottom: 47px;
     left: 50%;
     transform: translate(-50%, 0);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: auto;
+    bottom: 70px;
+    left: auto;
+    right: auto;
   }
 }
 
@@ -132,7 +141,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -2px;
     font-size: 20px;
     line-height: 30px;
+
+    &--then {
+      background-color: $basic_grey;
+    }
+
+    &--now {
+      background-color: $light_grey;
+    }
   }
 }
